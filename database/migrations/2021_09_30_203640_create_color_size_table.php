@@ -19,11 +19,12 @@ class CreateColorSizeTable extends Migration
             $table->unsignedBigInteger('color_id');
             $table->unsignedBigInteger('size_id');
 
+            $table->integer('cuantity');
 
             $table->foreign('color_id')->references('id')->on('colors');
             $table->foreign('size_id')->references('id')->on('sizes');
 
-            $table->integer('cuantity');
+            
 
             $table->timestamps();
         });

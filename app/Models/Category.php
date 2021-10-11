@@ -16,13 +16,18 @@ protected $fillable = [
     'icom',
 ];
 
-// uno a muchos
+// uno a muchos hasMany
     public function subcategories(){
         return $this->hasMany(Subcategory::class);
     }
 
-    //relacion muchos a muchos
+    //relacion muchos a muchos belongsToMany
     public function brands(){
         return $this->belongsToMany(Brand::class);
+    }
+
+    // relacion atravez de
+    public function products(){
+        return $this->hasManyThrough(Product::class, Subcategory::class);
     }
 }
