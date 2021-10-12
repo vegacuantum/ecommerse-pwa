@@ -40,6 +40,11 @@ class CategorySeeder extends Seeder
                 'slug' => Str::slug('moda'),
                 'icon' => '<i class="fas fa-tshirt"></i>'
             ],
+            [
+                'name' => 'mercado',
+                'slug' => Str::slug('Mercado'),
+                'icon' => '<i class="fas fa-cookie"></i>'
+            ],
         ];
     }
 }
