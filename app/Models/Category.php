@@ -13,7 +13,7 @@ protected $fillable = [
     'name',
     'slug',
     'image',
-    'icom',
+    'icon',
 ];
 
 // uno a muchos hasMany
