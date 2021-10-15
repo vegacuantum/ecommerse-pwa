@@ -28,7 +28,7 @@ class Product extends Model
 
     //relacion mucho a muchos
     public function colors(){
-        return $this->hasMany(Color::class);
+        return $this->belongsToMany(Color::class);
     }
 
     // relacion uno a muchos polimorfica
